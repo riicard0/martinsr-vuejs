@@ -6,7 +6,7 @@ MartinsR.dev/
   - Modificar navbar (João Lima e Silva)
   - Verificar semântica correta (SEO)
   - Segurança da página
-  - 
+  - Pasta: C:\portfolio\HELP
 
   - Up to Github from Git (Versão 1.0) = martinsr-portfolio
   - Vue.js + Javascript
