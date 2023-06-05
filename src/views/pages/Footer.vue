@@ -34,4 +34,58 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* FOOTER */
+footer {
+  background-color: #000;
+  padding: 30px;
+}
+
+footer .sobre_titulo p {
+  margin: 30px;
+}
+
+.footer_sociais {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #f7f7f7;
+}
+
+.footer_sociais li {
+  background-color: #212020;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.footer_sociais li i {
+  padding: 30px;
+  color: #f7f7f7;
+}
+
+.footer_sociais li:hover {
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  background-color: #3e3d3d;
+}
+
+.footer_sociais::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 5px;
+  bottom: -40px;
+  background-color: #222;
+}
+
+footer .footer_comercial {
+  text-align: center;
+  color: #fff;
+  margin: 90px auto;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
