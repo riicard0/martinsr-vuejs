@@ -117,7 +117,7 @@ function showList(list, buttom = "all"){
     list[0].classList.add('active');    
     list[1].classList.add('active');
   }
-  if(buttom == 'graphic'){
+  if(buttom == 'app_project'){
     list[2].classList.add('active');
     list[3].classList.add('active');
   }
@@ -149,8 +149,8 @@ buttomGeral.forEach((item) => {
     if(currentButtom.classList.contains('design')){
       showList(listAll, "design")
     }
-    if(currentButtom.classList.contains('graphic')){
-      showList(listAll, "graphic")
+    if(currentButtom.classList.contains('app_project')){
+      showList(listAll, "app_project")
     }
     if(currentButtom.classList.contains('webSite')){
       showList(listAll, "webSite")

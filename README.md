@@ -50,13 +50,15 @@ Up Portfolio-Website: www.martinsr.dev/
   `Google Chrome`
   `Mozilla Firefox`
   `Opera GX`
-  `Safire`
 
   - Tested Browsers (Mobile):
   `Google Chrome`
   `Safire`
 
   - Develop in Operating System: *Windows* only :(
+
+  - Used Fonts:
+    `...`
 
 ## Tasks
 

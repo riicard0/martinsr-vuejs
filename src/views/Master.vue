@@ -1,349 +1,64 @@
 <template>
   <!-- PRELOAD -->
-  ?
+  ? PRELOAD ?
+  - Vídeo: "vue js 3 portfolio template" (WebCodeCamp): 31:08
+  - Falta arrumar todo CSS scoped
+  - Falta arrumar todo Javascritp
+  - Colocar logo no menu
+  - Arrumar escrevendo/descrevendo e colocar apagando e escrevendo meu nome e depois a profissão
+  -
 
-  <!-- CONTAINER - NAVEGATION BAR -->
-  <header>
-    <h1>Dev <span>Saber</span></h1>
-    <nav>
-      <ul aria-label="Navegação primária" class="navegacao-primaria">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
-      <i class="fa-solid fa-bars"></i>
-    </nav>
-  </header>
+  <!-- Navegation Bar -->
+  <Navbar></Navbar>
 
-  <!-- HERO -->
-  <section aria-label="seção curiculo download Leonardo" class="section-div">
-    <div>
-      <h2>Hi There! I'm</h2>
-      <h2 class="digitando">Web Developer and UX/UI Design</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam soluta debitis tempora nam quas nesciunt autem
-        dolorum delectus eum error?</p>
-      <a href="#">Download CV</a>
-    </div>
+  <!-- Home | Hero -->
+  <Home></Home>
 
-    <img src="#" alt="ilustrativa imagem de uma pessoa">
-  </section>
-  <main>
-    <article aria-label="seção sobre mim" class="sobre">
-      <div class="sobre_titulo">
-        <h1>About Me</h1>
-        <p>Professional Profile - There is All About Me</p>
-        <div aria-label="Seção apenas de ilustrações de botões">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <img src="#" alt="imagem de uma pessoa ilustrativa">
-      <div class="sobre_conteudo">
-        <div class="sobre_texto">
-          <h1>I'm Dev Saber - Leonardo</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore corporis eligendi, beatae expedita natus
-            mollitia officiis? Facere perferendis praesentium blanditiis reiciendis cum corrupti delectus aperiam dolor
-            voluptatum quasi. Suscipit, molestiae. Fugit quae commodi incidunt ullam quod. Voluptas
-            in dolores beatae magnam voluptates!
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quae commodi incidunt ullam quod. Voluptas
-            in dolores beatae magnam voluptates! Fugit quae commodi incidunt ullam quod. Voluptas
-            in dolores beatae magnam voluptates!
-          </p>
-        </div>
-        <div class="sobre_info">
-          <p><i class="fa-solid fa-calendar-days"></i>Date of birth: 04 mai 2001</p>
-          <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: Available</p>
-          <p><i class="fa-solid fa-location-dot"></i>Address: Curitiba, Brazil</p>
-          <p><i class="fa-sharp fa-solid fa-globe"></i>Spoken Languages: Brazil, Español, English</p>
-          <p><i class="fa-solid fa-flag"></i>Nationality: Russian</p>
-          <p><i class="fa-solid fa-phone-volume"></i>Phone: +99 9999-9999</p>
-          <p><i class="fa-solid fa-envelope"></i>Email: seuemail@hotmail.com</p>
-        </div>
-      </div>
-    </article>
-  </main>
+  <!-- About -->
+  <About></About>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <div class="sobre_titulo">
-      <h1>About Me</h1>
-      <p>Professional Profile - There is All About Me</p>
-      <div aria-label="Seção apenas de ilustrações de botões">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <!-- Services -->
+  <Services></Services>
 
-    <div class="my_services">
-      <ul aria-label="Navegação secundária">
-        <li>
-          <i class="fa-sharp fa-solid fa-pen-to-square"></i>
-          <h3>Web Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-        <li>
-          <i class="fa-solid fa-globe"></i>
-          <h3>Web Developer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-        <li>
-          <i class="fa-solid fa-camera"></i>
-          <h3>Photography</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-        <li>
-          <i class="fa-solid fa-layer-group"></i>
-          <h3>SEO Analyst</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-        <li>
-          <i class="fa-solid fa-medal"></i>
-          <h3>Creative Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-        <li>
-          <i class="fa-sharp fa-solid fa-palette"></i>
-          <h3>UX/UI</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dicta.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <!-- Portfolio -->
+  <Portfolio></Portfolio>
 
-  <!-- RESUME -->
-  <div class="my_resume">
-    <div class="sobre_titulo">
-      <h1>My Resume</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      <div aria-label="Seção apenas de ilustrações de botões">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <!-- Professional -->
+  <Professional></Professional>
 
-    <!-- RESUME - EXPERIENCE -->
-    <div class="resume_generico">
-      <h2 class="experience"><i class="fa-solid fa-handshake"></i>EXPERIENCE</h2>
-      <div class="experience_content">
-        <div>
-          <span>2017-2019</span>
-          <h3>UI/UX Develooper - Themeforest</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.</p>
-        </div>
-        <div>
-          <span>2015-2017</span>
-          <h3>Web Develooper - FailentRills</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.</p>
-        </div>
-        <div>
-          <span>2022-2023</span>
-          <h3>Web Design - BubbleSix</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.</p>
-        </div>
-
-        <ul>
-          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-        </ul>
-      </div>
-
-      <!-- RESUME - EDUCATION -->
-      <h2 class="education"><i class="fa-solid fa-book"></i>EDUCATION</h2>
-      <div class="education_content">
-        <div>
-          <span>2015-2019</span>
-          <h3>Bachalor - University</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est.</p>
-        </div>
-        <div>
-          <span>2013-2015</span>
-          <h3>WebMaster - FullStack</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est.</p>
-        </div>
-
-        <ul>
-          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-          <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-        </ul>
-
-      </div>
-    </div>
-
-    <!-- RESUME - COURSES -->
-    <div class="cursos">
-      <div class="my_skill">
-        <h2><i class="fa-sharp fa-regular fa-star"></i>MY SKILL</h2>
-        <div class="skill_content">
-          <h3>HTML 5</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-          </ul>
-        </div>
-
-        <div class="skill_content">
-          <h3>CSS 3</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-            <li><i class="fa-regular fa-star"></i></li>
-          </ul>
-        </div>
-
-        <div class="skill_content">
-          <h3>REACT</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-            <li><i class="fa-regular fa-star"></i></li>
-            <li><i class="fa-regular fa-star"></i></li>
-          </ul>
-        </div>
-
-        <div class="skill_content">
-          <h3>SASS</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-            <li><i class="fa-regular fa-star"></i></li>
-          </ul>
-        </div>
-
-        <div class="skill_content">
-          <h3>BOOTSTRAP</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-          </ul>
-        </div>
-
-        <div class="skill_content">
-          <h3>JAVASCRIPT</h3>
-          <ul>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-sharp fa-solid fa-star"></i></li>
-            <li><i class="fa-regular fa-star-half-stroke"></i></li>
-            <li><i class="fa-regular fa-star"></i></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- RESUME - FUN FACTS -->
-      <div class="funfacts">
-        <h2><i class="fa-solid fa-heart"></i>FUN FACTS</h2>
-        <ul>
-          <li>
-            <i class="fa-solid fa-mug-hot"></i>
-            <span>1245</span>
-            <p>Happy Clients</p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-medal"></i>
-            <span>11</span>
-            <p>Medal Projects</p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-user"></i>
-            <span>6025</span>
-            <p>User Rattings</p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-users"></i>
-            <span>289</span>
-            <p>Awards Achieved</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROJECTS -->
-  <section class="projects">
-    <div class="sobre_titulo">
-      <h1>Projects</h1>
-      <p>Professional Projects - Here are some of my projects</p>
-      <div aria-label="Seção de botões">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div class="projects_models">
-      <ul aria-label="Navagação entre modelos de projetos">
-        <li class="all">All</li>
-        <li class="design">Design</li>
-        <li class="graphic">Graphic</li>
-        <li class="webSite">WebSites</li>
-      </ul>
-    </div>
-
-    <div class="projects_storage">
-      <ul aria-label="Navegação de projetos">
-        <li id="design"><a href="#" target="_blank"><img src="img/projects/img_1.png"
-              alt="Site criado para ser um ecommerce geral"></a></li>
-        <li id="design"><a href="#" target="_blank"><img src="img/projects/img_2.png"
-              alt="Clone da tela de login do Facebook"></a></li>
-        <li id="graphic"><a href="#" target="_blank"><img src="img/projects/img_3.png"
-              alt="Clone da tela de login do Instagram"></a></li>
-        <li id="graphic"><a href="#" target="_blank"><img src="img/projects/img_4.png" alt="Landing Page da Apple"></a>
-        </li>
-        <li id="webSite"><a href="#" target="_blank"><img src="img/projects/img_5.png"
-              alt="Tela de cadastro de League of Legends"></a></li>
-        <li id="webSite"><a href="#" target="_blank"><img src="img/projects/img_6.png"
-              alt="Landing Page do filme Mario World"></a></li>
-        <li id="webSite"><a href="#" target="_blank"><img src="img/projects/img_7.png" alt="Cone da Netflix"></a></li>
-        <li id="webSite"><a href="#" target="_blank"><img src="img/projects/img_8.png"
-              alt="Landing Page do filme Sonic"></a></li>
-      </ul>
-    </div>
-    <a class="load_more" href="#">Load More Projects</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="sobre_titulo">
-      <h1>Dev Saber</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos ex a repellendus nemo illum,
-        cupiditate ea quidem nisi nesciunt.</p>
-    </div>
-
-    <nav aria-label="Navegação de links sociais">
-      <ul class="footer_sociais">
-        <li><i class="fa-brands fa-facebook-f"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-twitter"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-linkedin-in"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-github-alt"><a href="#"></a></i></li>
-      </ul>
-    </nav>
-
-    <p class="footer_comercial">Todos os direitos reservados DEV SABER &copy; - 2023</p>
-  </footer>
+  <!-- Footer -->
+  <Footer></Footer>
 </template>
+
+<script>
+import Navbar from '@/views/pages/Navbar.vue'
+import Home from '@/views/pages/Home.vue'
+import About from '@/views/pages/About.vue'
+import Services from '@/views/pages/Services.vue'
+import Portfolio from '@/views/pages/Portfolio.vue'
+import Professional from '@/views/pages/Professional.vue'
+import Footer from '@/views/pages/Footer.vue'
+
+export default {
+  app: '',
+
+  components: {
+    Navbar,
+    Home,
+    About,
+    Portfolio,
+    Professional,
+    Services,
+    Footer
+  },
+
+  setup() {
+    return {
+
+    }
+  }
+};
+
+</script>
 
 <style></style>

@@ -1,25 +1,12 @@
 MartinsR.dev/
 
 > Versão 1.0:
-  - Preload da logo 'MartinsR'
-  - Logo 'MartinsR' em SVG
-  - Modificar navbar (João Lima e Silva)
-  - Verificar semântica correta (SEO)
-  - Segurança da página
   - Pasta: C:\portfolio\HELP
 
-  - Up to Github from Git (Versão 1.0) = martinsr-portfolio
-  - Vue.js + Javascript
   - LinkedIn Post (Github)
   - LinkedIn Post (Deploy)
-  - Domínio = www.martinsr.dev/
-  - Host = ? Hostinger/Hostigator ?
-  - 
 
-> Versão 2.0:
-  - Up to Github from Git (Versão 2.0) = martinsr-vite
-  - Vue.js + Javascript + SASS + Vite
-  - 
+  - Host = ? Hostinger/Hostigator ?
 
 
 Parei em 21:41 = https://youtu.be/PEAVQpoRhCY
