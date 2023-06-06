@@ -1,6 +1,6 @@
 <template>
   <!-- HOME | HERO -->
-  <section id="home" aria-label="seção home" class="section-div">
+  <section id="home" aria-label="seção home" class="section-div site-website">
     <div>
       <h2>Howdy. I'm</h2>
       <h2 class="digitando">Front-End Developer ▪︎ Vue.js | Javascript</h2>
@@ -8,8 +8,6 @@
         challenge and the knowledge that will come from this field.</p>
       <a href="#about">About Me</a>
     </div>
-
-    <!-- <img src="../../assets/me/mee3.jpeg" alt="Minha imagem de perfil"> -->
   </section>
 </template>
 
@@ -30,18 +28,18 @@ export default {
 /* DOWNLOAD CV SEÇÃO */
 .section-div {
   animation: inicializar .7s forwards;
-  background-color: #292929;
+  background-color: var(--color-6);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   gap: 60px;
   padding: 60px;
-  height: 93vh;
-  background-image: url(../../assets/me/mee3.jpeg);
+  height: 94vh;
+  background-image: url(../../assets/me/mee2.png);
   background-repeat: no-repeat;
-  background-size: 55%;
-  background-position: 90%;
+  background-size: 70vh;
+  background-position: right;
 }
 
 .section-div div {
@@ -52,44 +50,40 @@ export default {
 }
 
 .section-div div h2:first-child {
-  font-family: 'Poppins';
+  font-family: var(--font-1);
   font-weight: 600;
-  color: #f7f7f7;
+  color: var(--color-4);
 }
 
 .section-div div h2:nth-child(2) {
-  font-family: 'Poppins';
+  font-family: var(--font-1);
   font-weight: 600;
-  color: #B4DF9F;
-  text-shadow: 2px 2px 2px #000;
+  color: var(--color-5);
+  text-shadow: 2px 2px 2px var(--color-1);
 }
 
 .section-div div p {
-  font-family: 'Poppins';
+  font-family: var(--font-1);
   font-weight: 200;
-  color: #f7f7f7;
+  color: var(--color-4);
 }
 
 .section-div div a {
   justify-self: start;
   padding: 15px 40px;
-  border-radius: 5px;
-  border: 2px solid white;
+  border-radius: 30px;
   transition: .3s ease-in;
-  background-color: #000;
-  color: #fff;
-  border: 2px solid transparent;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  border: 1px solid transparent;
 }
 
 .section-div div a:hover {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid transparent;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
-
-/*.section-div img {
-  max-width: 100%;
-}*/
 
 .digitando::after {
   content: '|';

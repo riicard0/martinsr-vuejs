@@ -86,14 +86,13 @@ export default {
 <style scoped>
 /* SERVICES */
 .services {
-  margin-top: -30px;
   padding: 60px;
-  background-color: #151515;
+  background-color: var(--color-8);
 }
 
 .my_services {
   padding: 60px;
-  color: white;
+  color: var(--color-2);
 }
 
 .my_services ul {
@@ -105,7 +104,6 @@ export default {
 }
 
 .my_services ul li {
-  cursor: pointer;
   border-radius: 6px;
   position: relative;
   padding: 10px;
@@ -115,23 +113,23 @@ export default {
   max-width: 300px;
   align-content: center;
   height: 300px;
-  background-color: #222;
+  background-color: var(--color-9);
 }
 
 .my_services ul li i {
   font-size: 2.7rem;
-  color: #dc3545
+  color: var(--color-5);
 }
 
 .my_services ul li h3 {
-  color: #fff;
+  color: var(--color-2);
   font-size: 1.6rem;
-  font-family: 'Poppins';
+  font-family: var(--font-1);
   font-weight: 500;
 }
 
 .my_services ul li p {
-  color: #707070;
+  color: var(--color-3);
   font-size: 1.1rem;
 }
 
@@ -164,14 +162,14 @@ export default {
 .my_services li:hover::before {
   width: 100%;
   height: 100%;
-  border-top: 2px solid red;
-  border-right: 2px solid red;
+  border-top: 2px solid var(--color-5);
+  border-right: 2px solid var(--color-5);
 }
 
 .my_services li:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid red;
-  border-left: 2px solid red;
+  border-bottom: 2px solid var(--color-5);
+  border-left: 2px solid var(--color-5);
 }
 </style>

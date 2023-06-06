@@ -1,7 +1,7 @@
 <template>
   <!-- ABOUT -->
   <main id="about">
-    <article aria-label="seção sobre mim" class="sobre">
+    <article aria-label="seção sobre mim" class="sobre site-website">
       <div class="sobre_titulo">
         <h1>Sobre</h1>
         <p>Perfil Profissional - Sobre Mim</p>
@@ -11,29 +11,29 @@
           <span></span>
         </div>
       </div>
-      <img src="../../assets/me/mee3.jpeg" alt="Minha imagem de perfil">
+      <img src="../../assets/me/mee.jpeg" alt="Minha imagem de perfil">
       <div class="sobre_conteudo">
         <div class="sobre_texto">
-          <h1>Ricardo Martins</h1>
-          <p>🇧🇷 Sou estudante e admirador da área de tecnologia, especificamente programação, há alguns anos. E há algum
-            tempo venho em busca de uma oportunidade para embarcar de vez nessa jornada. Comecei estudando lógica de
-            programação, com *Batch Script* e linguagem *C*, porém depois de um tempo resolvi seguir um "roadmap" focado
-            em 'Front-End Developer' e venho nesse caminho até os dias atuais. 😁
+          <h1>I'm Ricardo Martins</h1>
+          <p>I am a student and an admirer of the technology field, specifically programming, for a few years now. And for
+            some time, I have been searching for an opportunity to fully embark on this journey. I started by studying
+            programming logic, with Batch Script and the C language, but after a while, I decided to follow a roadmap
+            focused on becoming a Front-End Developer, and I have been on this path to this day.
             <br />
             <br />
-            No final de 2022, estando com um conhecimento razoavelmente bom em *HTML*, *CSS* e *Javascript*, escolhi um
-            framework para seguir como principal e resolvi focar totalmente em *Vue.js* e seu universo, claramente planejo
-            continuar aprendendo outras stacks futuramente, mas estou buscando me dedicar e melhorar nessa tecnologia no
-            momento. 👀
+            At the end of 2022, having a reasonably good knowledge of HTML, CSS, and Javascript, I chose a framework to
+            pursue as my main focus and decided to fully concentrate on Vue.js and its ecosystem. I clearly plan to
+            continue learning other stacks in the future, but I am currently seeking to dedicate myself and improve in
+            this technology. 👀
           </p>
         </div>
         <div class="sobre_info">
-          <p><i class="fa-solid fa-calendar-days"></i>Birth: jan.1999</p>
-          <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: Available</p>
-          <p><i class="fa-solid fa-location-dot"></i>Address: São Paulo, Brazil</p>
-          <p><i class="fa-sharp fa-solid fa-globe"></i>Spoken Languages: Brazil, English</p>
-          <p><i class="fa-solid fa-flag"></i>Nationality: Brazilian</p>
-          <p><i class="fa-solid fa-envelope"></i>Email: ricarrd.omarttyns@gmail.com</p>
+          <p><i class="fa-solid fa-calendar-days"></i>Birth: <span>jan.1999</span></p>
+          <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: <span>Available</span></p>
+          <p><i class="fa-solid fa-location-dot"></i>Address: <span>São Paulo, Brazil</span></p>
+          <p><i class="fa-sharp fa-solid fa-globe"></i>Spoken Languages: <span>Brazil (Fluent), English (A2-B1)</span></p>
+          <p><i class="fa-solid fa-flag"></i>Nationality: <span>Brazilian</span></p>
+          <p><i class="fa-solid fa-envelope"></i>Email: <span>ricarrd.omarttyns@gmail.com</span></p>
         </div>
       </div>
     </article>
@@ -55,17 +55,31 @@ export default {
 <style scoped>
 /* SEÇÃO PRINCIPAL SOBRE MIM */
 main {
-  background-color: #111;
-  color: white;
+  background-color: var(--color-7);
+  color: var(--color-2);
+  height: 100vh;
+}
+
+main::after {
+  content: '';
+  display: block;
+  background-color: var(--color-2);
+  width: 300px;
+  height: 6px;
+  margin: 4rem auto;
+  border-radius: 5px;
 }
 
 main .sobre {
-  /* margin-top: 60px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
+}
+
+.sobre_titulo {
+  margin: 0;
 }
 
 .sobre img {
@@ -73,7 +87,7 @@ main .sobre {
   cursor: pointer;
   grid-row: 2;
   max-width: 100%;
-  border-radius: 4px;
+  border-radius: 5px;
   filter: blur(0);
 }
 
@@ -86,7 +100,7 @@ main .sobre {
   animation: sobeSecao .6s ease-in-out forwards;
   grid-column: 2/-1;
   display: grid;
-  color: #707070;
+  color: var(--color-3);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -97,15 +111,16 @@ main .sobre {
 }
 
 .sobre_texto h1 {
+  font-family: var(--font-5);
   font-size: 2.3rem;
-  color: #fff;
+  color: var(--color-2);
   grid-column: 1/-1;
 }
 
 .sobre_texto h1::after {
-  background-color: #ff5d56;
+  background-color: var(--color-5);
   height: 6px;
-  width: 60px;
+  width: 100px;
   margin: 20px 0;
   content: '';
   display: block;
@@ -113,7 +128,9 @@ main .sobre {
 }
 
 .sobre_texto p {
-  font-size: 1.3rem;
+  font-family: var(--font-1);
+  color: var(--color-3);
+  font-size: 1.1rem;
   grid-row: 2;
   grid-column: 1/-1;
 }
@@ -128,13 +145,19 @@ main .sobre {
 }
 
 .sobre_info i {
-  color: #dc3545;
+  color: var(--color-5);
   display: inline-block;
   padding-right: 15px;
   font-size: 1.5rem;
 }
 
 .sobre_info p {
-  font-size: .9rem;
+  font-family: var(--font-3);
+  font-size: 1.2rem;
+  color: var(--color-3);
+}
+
+.sobre_info span {
+  color: var(--color-4);
 }
 </style>

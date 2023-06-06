@@ -1,14 +1,14 @@
 <template>
   <!-- MENU -->
-  <header>
+  <header class="site-website">
     <h1>Ricardo <span>Martins</span></h1>
     <nav>
       <ul aria-label="navegação primária" class="navegacao-primaria">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#professional">Experiência</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#professional">Experience</a></li>
       </ul>
       <i class="fa-solid fa-bars"></i>
     </nav>
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 /* HEADER */
 header {
-  background-color: #000;
+  background-color: var(--color-6);
   padding: 10px;
   display: flex;
   align-items: center;
@@ -39,12 +39,12 @@ header {
 }
 
 header h1 {
-  color: #fff;
-  font-size: 2.5rem;
+  color: var(--color-2);
+  font-size: 2rem;
 }
 
 header span {
-  color: #B4DF9F;
+  color: var(--color-5);
 }
 
 header nav {
@@ -59,10 +59,11 @@ header .navegacao-primaria {
 }
 
 header .navegacao-primaria li a {
-  color: #fff;
+  color: var(--color-2);
   width: 0px;
   height: 0px;
-  font-size: 1.3rem;
+  font-family: var(--font-1);
+  font-size: 1.1rem;
 }
 
 header .navegacao-primaria li a::after {
@@ -78,6 +79,6 @@ header .navegacao-primaria li a:hover::after {
   width: 100%;
   height: 0px;
   padding: 0px;
-  border-bottom: 4px solid #B4DF9F;
+  border-bottom: 4px solid var(--color-5);
 }
 </style>

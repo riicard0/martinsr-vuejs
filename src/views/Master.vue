@@ -1,14 +1,14 @@
 <template>
   <!-- PRELOAD -->
-  <div style="color: red">
+  <!-- <div style="color: red">
     ? PRELOAD ?<br />
     - Vídeo: "vue js 3 portfolio template" (WebCodeCamp): 31:08<br />
     - Falta arrumar todo CSS scoped<br />
     - Falta arrumar todo Javascritp<br />
     - Colocar logo no menu<br />
     - Arrumar escrevendo/descrevendo e colocar apagando e escrevendo meu nome e depois a profissão<br />
-    -<br />
-  </div>
+    - Organizar tamanho para meu monitor (monitores grandes)<br />
+  </div> -->
 
   <!-- Navegation Bar -->
   <Navbar></Navbar>
@@ -25,7 +25,7 @@
   <!-- Portfolio -->
   <Portfolio></Portfolio>
 
-  <!-- Professional -->
+  <!-- Experience -->
   <Professional></Professional>
 
   <!-- Footer -->
@@ -64,9 +64,12 @@ export default {
 </script>
 
 <style>
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
+/* ALL WEBSITE */
 * {
   padding: 0;
   margin: 0;
@@ -80,7 +83,34 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: var(--color-6);
+  margin: 0 auto;
+}
+
+/* VARIÁVEIS */
+:root {
+  --font-1: "Poppins", serif;
+  --font-2: "Berkshire Swash", cursive;
+  --font-3: "Baloo Da 2", serif;
+  --font-4: "Josefin Slab", serif;
+  --font-5: "Mulish", serif;
+
+  --color-1: #000;
+  --color-2: #fff;
+  --color-3: #707070;
+  --color-4: #f7f7f7;
+  --color-5: #B4DF9F;
+  --color-6: #0f121b;
+  --color-7: #111;
+  --color-8: #151515;
+  --color-9: #222;
+
+  --color-gradient-1a: rgba(13, 12, 12, 0.176);
+  --color-gradient-1b: rgba(46, 46, 46, 0.724);
+}
+
+/* CLASSES - SIZE WEBSITE */
+.site-website {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -90,20 +120,21 @@ body {
   margin: 30px 0;
   grid-column: 1/-1;
   text-align: center;
-  color: #fff;
+  color: var(--color-2);
 }
 
 .sobre_titulo h1 {
   font-size: 2.5rem;
-  color: #ff5d56;
-  font-family: 'Berkshire Swash', cursive;
+  color: var(--color-5);
+  font-family: var(--font-2);
 }
 
 .sobre_titulo p {
-  color: #707070;
+  color: var(--color-3);
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem;
   position: relative;
+  font-family: var(--font-4);
 }
 
 .sobre_titulo div {
@@ -117,7 +148,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #dc3545;
+  background-color: var(--color-5);
 }
 
 /* KEYFRAMES - HOME*/
@@ -183,19 +214,16 @@ body {
 @media(max-width: 992px) {
 
   /* HEADER | HOME */
-  .section-div img {
-    display: none;
-  }
 
   .section-div {
-    background-image: url(../assets/me/mee3.jpeg);
+    background-image: url(../assets/me/mee2.png);
     background-repeat: no-repeat;
-    background-size: contain !important;
-    background-position: center !important;
+    background-size: 70vh !important;
+    background-position: right !important;
   }
 
   .section-div div p {
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px var(--color-1);
   }
 
   header {
@@ -208,16 +236,16 @@ body {
   }
 
   header i {
-    color: #f7f7f7;
+    color: var(--color-4);
     font-size: 3rem;
   }
 
   header .navegacao-primaria.ativado {
-    background: linear-gradient(rgba(13, 12, 12, 0.176), rgba(46, 46, 46, 0.724));
+    background: linear-gradient(var(--color-gradient-1a), var(--color-gradient-1b));
     position: absolute;
     display: grid;
     top: 80px;
-    color: white;
+    color: var(--color-2);
     z-index: 1;
     padding: 30px;
     font-size: 1.6rem;
