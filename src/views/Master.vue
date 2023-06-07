@@ -1,14 +1,19 @@
 <template>
   <!-- PRELOAD -->
-  <!-- <div style="color: red">
-    ? PRELOAD ?<br />
-    - Vídeo: "vue js 3 portfolio template" (WebCodeCamp): 31:08<br />
+  <div style="color: red">
+    - ? PRELOAD ?<br />
     - Falta arrumar todo CSS scoped<br />
     - Falta arrumar todo Javascritp<br />
-    - Colocar logo no menu<br />
+    - Colocar logo no "navbar.vue"<br />
     - Arrumar escrevendo/descrevendo e colocar apagando e escrevendo meu nome e depois a profissão<br />
     - Organizar tamanho para meu monitor (monitores grandes)<br />
-  </div> -->
+    - Lembrar de verificar ao final se o site todo está em inglês<br />
+    - Verificar se todas as variáveis das páginas estão nos lugares das fontes e cores <br />
+    - Caso queira, criar outra página (components), junto do "vue-router", para o ".load.more" na área "portfolio" do
+    website, indo para uma página que irá consumir uma API em Javascript dos meus projetos no Github.<br />
+    - Colocar cards dos projetos em ".projects_storage" que nem no "Portfolio João Carlos Lima e Silva"<br />
+    -
+  </div>
 
   <!-- Navegation Bar -->
   <Navbar></Navbar>
@@ -48,9 +53,9 @@ export default {
     Navbar,
     Home,
     About,
+    Services,
     Portfolio,
     Professional,
-    Services,
     Footer
   },
 
@@ -117,7 +122,7 @@ body {
 
 /* CLASSES - TITLES */
 .sobre_titulo {
-  margin: 30px 0;
+  margin: 0;
   grid-column: 1/-1;
   text-align: center;
   color: var(--color-2);
@@ -132,7 +137,7 @@ body {
 .sobre_titulo p {
   color: var(--color-3);
   font-size: 1.4rem;
-  margin: 1.5rem;
+  margin: 1rem;
   position: relative;
   font-family: var(--font-4);
 }
@@ -259,13 +264,30 @@ body {
 @media(max-width: 992px) {
 
   /* SOBRE */
+  main {
+    height: 100% !important;
+  }
+
+  main .sobre::after {
+    margin: 2rem auto -1rem auto !important;
+  }
+
   .sobre img {
     grid-column: 1/-1;
     justify-self: center;
   }
 
   .sobre_conteudo {
-    grid-column: 1/-1;
+    grid-column: 1/-1 !important;
+  }
+
+  /* SERVICES */
+  .services {
+    height: 100% !important;
+  }
+
+  .services::after {
+    margin: 0 auto -1rem auto !important;
   }
 }
 

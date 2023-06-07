@@ -3,8 +3,8 @@
   <main id="about">
     <article aria-label="seção sobre mim" class="sobre site-website">
       <div class="sobre_titulo">
-        <h1>Sobre</h1>
-        <p>Perfil Profissional - Sobre Mim</p>
+        <h1>About</h1>
+        <p>Professional Profile - About Me</p>
         <div aria-label="seção apenas de ilustrações de botões">
           <span></span>
           <span></span>
@@ -60,26 +60,24 @@ main {
   height: 100vh;
 }
 
-main::after {
-  content: '';
-  display: block;
-  background-color: var(--color-2);
-  width: 300px;
-  height: 6px;
-  margin: 4rem auto;
-  border-radius: 5px;
-}
-
 main .sobre {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   justify-content: center;
-  padding: 40px 40px 60px 40px;
+  padding: 40px;
 }
 
-.sobre_titulo {
-  margin: 0;
+main .sobre::after {
+  content: '';
+  display: block;
+  background-color: var(--color-2);
+  width: 300px;
+  height: 6px;
+  border-radius: 5px;
+  grid-column: 1/-1;
+  grid-row: 6;
+  margin: 0 auto;
 }
 
 .sobre img {

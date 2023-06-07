@@ -2,8 +2,8 @@
   <!-- PROJECTS -->
   <section id="portfolio" class="projects">
     <div class="sobre_titulo">
-      <h1>Portfólio</h1>
-      <p>Projetos Profissionais - Aqui estão alguns projetos meus</p>
+      <h1>Portfolio</h1>
+      <p>Professional Projects - Here are some of my projects.</p>
       <div aria-label="seção de botões">
         <span></span>
         <span></span>
@@ -11,9 +11,9 @@
       </div>
     </div>
 
-    <div class="projects_models">
+    <div class="projects_models site-website">
       <ul aria-label="navagação entre modelos de projetos">
-        <li class="all">Tudo</li>
+        <li class="all">All</li>
         <li class="design">Design</li>
         <li class="app_project">App</li>
         <li class="webSite">Website</li>
@@ -31,7 +31,9 @@
         <li id="webSite"><a href="#" target="_blank"><img src="#" alt="site criado consumindo a API do Github"></a></li>
       </ul>
     </div>
-    <a class="load_more" href="#">Mais Projetos</a>
+    <div class="load-button">
+      <a class="load_more" href="https://github.com/riicard0?tab=repositories" target="_blank">Load More</a>
+    </div>
   </section>
 </template>
 
@@ -51,11 +53,12 @@ export default {
 <style scoped>
 /* PROJECTS */
 .projects {
-  padding: 30px;
   display: grid;
   justify-content: center;
-  gap: 30x;
-  background-color: #151515;
+  gap: 30px;
+  padding: 40px;
+  height: 100%;
+  background-color: var(--color-2);
 }
 
 .projects ul {
@@ -66,23 +69,22 @@ export default {
 
 .projects_models ul li {
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  background-color: #222;
-  border: 1px solid #333;
-  margin-top: 20px;
+  font-family: var(--font-3);
+  background-color: var(--color-9);
+  border: 1px solid var(--color-6);
   padding: 6px 20px;
-  color: #707070;
+  color: var(--color-3);
   transition: .3s ease-in;
 }
 
 .projects_models ul li:hover {
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--color-2);
+  border: 1px solid var(--color-2);
 }
 
 .projects_models ul li.active {
-  background-color: #dc3545;
-  color: #151515;
+  background-color: var(--color-5);
+  color: var(--color-8);
   font-weight: bold;
 }
 
@@ -114,22 +116,29 @@ export default {
 }
 
 .projects_storage ul li img:hover {
-  border: 1px solid #fff;
+  border: 1px solid var(--color-2);
+}
+
+.load-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .load_more {
-  background-color: #222;
-  text-decoration: none;
+  background-color: var(--color-9);
   justify-self: center;
-  margin-top: 40px;
+  align-items: center;
+  color: var(--color-3);
   padding: 20px 40px;
-  border: 1px solid #333;
-  color: #707070;
+  font-family: var(--font-3);
+  border: 1px solid var(--color-6);
+  text-decoration: none;
   transition: .3s ease-in;
 }
 
 .load_more:hover {
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--color-2);
+  border: 1px solid var(--color-2);
 }
 </style>
