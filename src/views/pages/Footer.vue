@@ -1,23 +1,25 @@
 <template>
   <!-- FOOTER -->
   <footer>
-    <div class="sobre_titulo">
-      <h1>Ricardo Martins</h1>
-      <p>Infelizmente ainda não tenho experiência no mercado profissional, porém esse é o principal objetivo, há momentos
-        de desânimo, mas a persistência sempre esteve a frente!</p>
+    <div class="site-website">
+      <div class="sobre_titulo">
+        <h1>Ricardo Martins</h1>
+        <p>Unfortunately, I still don't have any experience in the professional market, but that is the main goal. There
+          are moments of discouragement, but persistence has always been at the forefront!</p>
+      </div>
+
+      <nav aria-label="navegação para redes sociais">
+        <ul class="footer_sociais">
+          <li><a href="https://www.linkedin.com/in/riicard0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li><a href="https://www.instagram.com/ricarrdo_marttyns/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://github.com/riicard0" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+        </ul>
+      </nav>
+
+      <p class="footer_comercial">All rights reserved Ricardo Martins &copy; - 2023</p>
     </div>
-
-    <nav aria-label="navegação para redes sociais">
-      <ul class="footer_sociais">
-        <li><i class="fa-brands fa-facebook-f"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-twitter"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-linkedin-in"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
-        <li><i class="fa-brands fa-github-alt"><a href="#"></a></i></li>
-      </ul>
-    </nav>
-
-    <p class="footer_comercial">Todos os direitos reservados Ricardo Martins &copy; - 2023</p>
   </footer>
 </template>
 
@@ -37,12 +39,20 @@ export default {
 <style scoped>
 /* FOOTER */
 footer {
-  background-color: #000;
-  padding: 30px;
+  background-color: var(--color-1);
+  padding: 70px;
+}
+
+footer .sobre_titulo h1 {
+  font-size: 3rem;
 }
 
 footer .sobre_titulo p {
-  margin: 30px;
+  margin: 30px auto 30px auto;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 1rem;
+  max-width: 900px;
 }
 
 .footer_sociais {
@@ -52,24 +62,24 @@ footer .sobre_titulo p {
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
-  color: #f7f7f7;
+  color: var(--color-4);
 }
 
 .footer_sociais li {
-  background-color: #212020;
+  background-color: var(--color-8);
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid var(--color-9);
 }
 
 .footer_sociais li i {
   padding: 30px;
-  color: #f7f7f7;
+  color: var(--color-4);
 }
 
 .footer_sociais li:hover {
   transition: .3s ease-in-out;
   cursor: pointer;
-  background-color: #3e3d3d;
+  background-color: var(--color-9);
 }
 
 .footer_sociais::before {
@@ -78,14 +88,14 @@ footer .sobre_titulo p {
   width: 200px;
   height: 5px;
   bottom: -40px;
-  background-color: #222;
+  background-color: var(--color-9);
 }
 
 footer .footer_comercial {
   text-align: center;
-  color: #fff;
+  color: var(--color-5);
   margin: 90px auto;
   font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-5);
 }
 </style>

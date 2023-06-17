@@ -32,10 +32,10 @@ export default {
 /* HEADER */
 header {
   background-color: var(--color-6);
-  padding: 10px;
+  padding: 30px 70px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -50,6 +50,10 @@ header span {
 header nav {
   display: flex;
   justify-content: center;
+}
+
+header nav i {
+  display: none;
 }
 
 header .navegacao-primaria {

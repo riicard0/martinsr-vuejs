@@ -3,7 +3,7 @@
   <div style="color: red">
     - ? PRELOAD ?<br />
     - Falta arrumar todo CSS scoped<br />
-    - Falta arrumar todo Javascritp<br />
+    - Falta arrumar todo Javascript<br />
     - Colocar logo no "navbar.vue"<br />
     - Arrumar escrevendo/descrevendo e colocar apagando e escrevendo meu nome e depois a profissão<br />
     - Organizar tamanho para meu monitor (monitores grandes)<br />
@@ -12,6 +12,9 @@
     - Caso queira, criar outra página (components), junto do "vue-router", para o ".load.more" na área "portfolio" do
     website, indo para uma página que irá consumir uma API em Javascript dos meus projetos no Github.<br />
     - Colocar cards dos projetos em ".projects_storage" que nem no "Portfolio João Carlos Lima e Silva"<br />
+    - Revisar Javascript na "page": "Professional.vue", os botões não estão funcionando.
+    - Revisar Javascript na "page": "Portfolio.vue", os botões não estão funcionando. E aplicar um click na imagem e
+    aparecer o layout inteiro.
     -
   </div>
 
@@ -237,12 +240,13 @@ body {
   }
 
   header .navegacao-primaria {
-    display: none;
+    display: none !important;
   }
 
   header i {
     color: var(--color-4);
     font-size: 3rem;
+    display: block !important;
   }
 
   header .navegacao-primaria.ativado {
@@ -289,6 +293,14 @@ body {
   .services::after {
     margin: 0 auto -1rem auto !important;
   }
+
+  .projects {
+    height: 100% !important;
+  }
+
+  .projects::after {
+    margin: 2% auto -5rem auto !important;
+  }
 }
 
 @media(max-width: 1089px) {
@@ -312,29 +324,13 @@ body {
     grid-row: 1;
     justify-self: center;
   }
-
-  /* PROFESSIONAL - CURSOS */
-  .cursos {
-    grid-template-columns: 1fr;
-  }
-
-  .cursos .my_skill h2 {
-    justify-self: center;
-  }
-
-  .cursos .my_skill {
-    text-align: center;
-    grid-template-columns: 1fr;
-    justify-self: center;
-    grid-column: 1/-1;
-  }
 }
 
 @media(max-width: 1089px) {
 
   /* PORTFOLIO */
   .projects_storage ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 </style>
