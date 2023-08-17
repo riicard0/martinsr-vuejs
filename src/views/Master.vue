@@ -1,22 +1,22 @@
 <template>
   <!-- PRELOAD -->
-  <div style="color: red">
+  <!-- <div style="color: red">
     - ? PRELOAD ?<br />
     - Falta arrumar todo CSS scoped<br />
-    - Falta arrumar todo Javascript<br />
+    - Falta arrumar todo Javascript (converter para Vue)<br />
     - Colocar logo no "navbar.vue"<br />
     - Arrumar escrevendo/descrevendo e colocar apagando e escrevendo meu nome e depois a profissão<br />
-    - Organizar tamanho para meu monitor (monitores grandes)<br />
+    - Organizar tamanho (responsividade) para meu monitor (monitores grandes)<br />
     - Lembrar de verificar ao final se o site todo está em inglês<br />
     - Verificar se todas as variáveis das páginas estão nos lugares das fontes e cores <br />
     - Caso queira, criar outra página (components), junto do "vue-router", para o ".load.more" na área "portfolio" do
     website, indo para uma página que irá consumir uma API em Javascript dos meus projetos no Github.<br />
     - Colocar cards dos projetos em ".projects_storage" que nem no "Portfolio João Carlos Lima e Silva"<br />
-    - Revisar Javascript na "page": "Professional.vue", os botões não estão funcionando.
+    - Revisar Javascript na "page": "Professional.vue", os botões não estão funcionando.<br />
     - Revisar Javascript na "page": "Portfolio.vue", os botões não estão funcionando. E aplicar um click na imagem e
-    aparecer o layout inteiro.
+    aparecer o layout inteiro.<br />
     -
-  </div>
+  </div> -->
 
   <!-- Navegation Bar -->
   <Navbar></Navbar>
